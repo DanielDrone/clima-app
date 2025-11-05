@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// src/index.js
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from 'react';
+// Usamos createRoot, el API moderno de React 18
+import { createRoot } from 'react-dom/client'; 
+
+import App from './App'; // Importa el componente Dashboard (App.js)
+// Importa tus estilos globales (si los tienes)
+import './index.css'; 
+// NOTA: Si usas Tailwind CSS, asegúrate de que esté configurado en tu proyecto. 
+// Para este código, asumimos que Tailwind CSS está disponible para las clases de estilo.
+
+
+// 1. Encontrar el elemento DOM raíz
+const container = document.getElementById('root'); 
+
+// 2. Crear el Root (Raíz) de React
+const root = createRoot(container); 
+
+// 3. Renderizar el componente principal
+// React.StrictMode ayuda a encontrar problemas de código en desarrollo
 root.render(
   <React.StrictMode>
-    <App />
+    <App /> 
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

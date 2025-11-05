@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* src/index.css */
+/* Estilos globales básicos y para la fuente Inter */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Añade una fuente moderna y legible */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Puedes añadir más estilos de utilidad aquí si es necesario */
