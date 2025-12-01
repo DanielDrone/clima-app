@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.css": "/clima-app/static/css/main.175c1f2e.css",
+    "main.js": "/clima-app/static/js/main.4a5a1781.js",
+    "index.html": "/clima-app/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.175c1f2e.css",
+    "static/js/main.4a5a1781.js"
+  ]
+}
